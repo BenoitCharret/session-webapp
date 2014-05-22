@@ -58,7 +58,6 @@
                                 <argument> -t</argument>
                                 <argument>"${project.artifactId}/${project.version}"</argument>
                                 <argument>.</argument>
-
                             </arguments>
                         </configuration>
                     </execution>
