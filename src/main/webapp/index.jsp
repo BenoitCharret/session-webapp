@@ -8,6 +8,8 @@
 <html>
 <body>
 <h2>Hello World!</h2>
+<% if (userName!=null){%>
 <div> You are <%=userName%></div>
+<%}%>
 </body>
 </html>
