@@ -3,6 +3,7 @@
 <%
 
     String userName= (String)session.getAttribute(Servlet.SESSION_USER_NAME);
+    System.out.println(session.getId());
 %>
 
 <html>
