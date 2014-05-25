@@ -1,5 +1,7 @@
 package com.axioconsulting.test;
 
+import com.axioconsulting.test.bean.Produit;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -20,8 +22,13 @@ public class Servlet extends HttpServlet{
         // check param nom and set it to session
         if (req.getParameter("userName")!=null){
             req.getSession(true).setAttribute(SESSION_USER_NAME,req.getParameter(USER_NAME));
+            req.getSession().setAttribute("product",new Produit("pates"));
+            ((Produit)req.getSession().getAttribute("product")).setCount(0);
         }
+
+
 
         resp.sendRedirect(req.getContextPath()+"/index.jsp");
     }
 }
+
