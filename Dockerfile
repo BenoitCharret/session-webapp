@@ -1,4 +1,5 @@
-FROM jolokia/tomcat-6.0
+FROM benoitcharret/tomcat6-session
+#FROM jolokia/tomcat-6.0
 
 ADD target/session-webapp.war /maven/
 

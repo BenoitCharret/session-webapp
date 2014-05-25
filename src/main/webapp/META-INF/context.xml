@@ -1,0 +1,14 @@
+<Context>
+    <!--<Manager className="com.axioconsulting.test.MyStandardManager">-->
+
+
+    <!--</Manager>-->
+
+    <Valve className="com.radiadesign.catalina.session.RedisSessionHandlerValve" />
+    <Manager className="com.radiadesign.catalina.session.RedisSessionManager"
+             host="172.17.0.2"
+    port="6379"
+    database="0"
+    maxInactiveInterval="180" />
+
+</Context>
