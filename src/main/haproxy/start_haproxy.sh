@@ -23,3 +23,4 @@ ADD_CONFIG="${ADD_CONFIG}"$'\n'"stats enable"$'\n'"stats uri /stats"
 echo "${ADD_CONFIG}" >> "$CONFIG"
 
 haproxy -f /etc/haproxy/haproxy.cfg -p "$PIDFILE"
+
