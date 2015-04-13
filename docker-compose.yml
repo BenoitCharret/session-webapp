@@ -1,0 +1,25 @@
+haproxy:
+  build: src/main/haproxy
+  links:
+   - app1
+   - app2
+  environment:
+    - UPSTREAMS=2
+  ports:
+    - "2080:80"
+
+app2:
+ build: .
+ links:
+    - db
+
+app1:
+ build: .
+ links:
+  - db
+
+
+db:
+  image: dockerfile/redis
+  volumes:
+  - /tmp/data:/data
