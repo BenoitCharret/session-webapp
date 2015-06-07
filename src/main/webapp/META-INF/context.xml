@@ -7,7 +7,7 @@
     <Valve className="com.radiadesign.catalina.session.RedisSessionHandlerValve"  />
     <Manager className="com.radiadesign.catalina.session.RedisSessionManager"
              host="db"
-    port="6379"
+    port="7000"
     database="0"
     maxInactiveInterval="180" classForClassloader="com.axioconsulting.test.bean.Produit"/>
 
